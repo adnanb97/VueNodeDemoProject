@@ -1,0 +1,15 @@
+sudo docker-compose up --build
+
+List containers: 
+sudo docker ps --all
+
+Stop a container: 
+docker rm --force nameofcont
+
+http://localhost:3000
+
+To see how to connect to pgAdminIII
+Run the container
+docker inspect 2f50fabe8a87 | grep IPAddress
+user: postgres
+pass: postgres
